@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Placas Solares</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>🔆 Calculadora de Placas Solares</h2>
+
+        <div class="input-group">
+            <label>🔢 Consumo médio mensal (kWh):</label>
+            <input type="number" id="consumoMensal" placeholder="Ex: 300">
+        </div>
+
+        <div class="input-group">
+            <label>⚡ Consumo médio diário (kWh/dia):</label>
+            <input type="number" id="consumoDiario" disabled>
+        </div>
+
+        <div class="input-group">
+            <label>🌞 Média diária da irradiação solar (kWh/m²):</label>
+            <input type="number" id="irradiacao" placeholder="Ex: 5.5">
+            <a href="https://www.cresesb.cepel.br/index.php#data" target="_blank" class="btn-link">🔍 Consultar Irradiação</a>
+        </div>
+
+        <div class="input-group">
+            <label>⚙️ Eficiência do sistema:</label>
+            <input type="text" id="eficiencia" value="75%" disabled>
+        </div>
+
+        <div class="input-group">
+            <label>🔋 Potência do sistema (kWp):</label>
+            <input type="number" id="potenciaSistema" disabled>
+        </div>
+
+        <div class="input-group">
+            <label>☀️ Potência da placa solar (W):</label>
+            <input type="number" id="potenciaPlaca" placeholder="Ex: 400">
+        </div>
+
+        <div class="input-group">
+            <label>📊 Quantidade de placas solares:</label>
+            <input type="number" id="quantidadePlacas" disabled>
+        </div>
+
+        <button id="calcular">📈 Calcular</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
